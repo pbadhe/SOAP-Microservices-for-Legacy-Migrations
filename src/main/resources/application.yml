@@ -1,0 +1,20 @@
+server:
+  port: 8081
+  error:
+    include-message: always
+
+logging:
+  level:
+    root: INFO
+    com:
+      workspace:
+        soap: DEBUG
+
+#By default the path for cxf is: /services
+cxf:
+  #Overriding the default path
+  path: /soap
+
+spring:
+  profiles:
+    active: local
